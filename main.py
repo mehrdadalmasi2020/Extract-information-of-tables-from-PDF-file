@@ -30,14 +30,14 @@ for file in List_ALL:
     i=0
     for i in range(0,int(str(my_pdf.pages[-1]).split(":")[1].split(">")[0])):
         im = my_pdf.pages[i].to_image(resolution=220)
-        im.save("C:\\Users\\mehrdad.almasi\\Desktop\\temporary.png","PNG")
+        im.save("C:\\Users\\mehrdad\\Desktop\\temporary.png","PNG")
         Original_Image = Image.open("C:\\Users\\mehrdad.almasi\\Desktop\\temporary.png") 
 
 #     # Rotate Image By 90 Degree 
 #         rotated_image1 = Original_Image.rotate(-90) 
-#         rotated_image1.save("C:\\Users\\mehrdad.almasi\\Desktop\\temporary1.png")
-        addrW="C:\\Users\\mehrdad.almasi\\Desktop\\Sofi\\"
-        image = cv2.imread("C:\\Users\\mehrdad.almasi\\Desktop\\temporary.png")
+#         rotated_image1.save("C:\\Users\\mehrdad\\Desktop\\temporary1.png")
+        addrW="C:\\Users\\mehrdad\\Desktop\\T\\"
+        image = cv2.imread("C:\\Users\\mehrdad\\Desktop\\temporary.png")
         text=extract_text(image)   
         print(text)
         where=addrW+addr.split("\\")[-1].replace(".pdf","")+"_page_"+str(i)
