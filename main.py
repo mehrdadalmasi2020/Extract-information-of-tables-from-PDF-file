@@ -33,7 +33,7 @@ for file in List_ALL:
         im.save("C:\\Users\\mehrdad\\Desktop\\temporary.png","PNG")
         Original_Image = Image.open("C:\\Users\\mehrdad.almasi\\Desktop\\temporary.png") 
 
-#     # Rotate Image By 90 Degree 
+#     # Rotate Image By 90 Degree  (if needed)
 #         rotated_image1 = Original_Image.rotate(-90) 
 #         rotated_image1.save("C:\\Users\\mehrdad\\Desktop\\temporary1.png")
         addrW="C:\\Users\\mehrdad\\Desktop\\T\\"
