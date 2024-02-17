@@ -31,7 +31,7 @@ for file in List_ALL:
     for i in range(0,int(str(my_pdf.pages[-1]).split(":")[1].split(">")[0])):
         im = my_pdf.pages[i].to_image(resolution=220)
         im.save("C:\\Users\\mehrdad\\Desktop\\temporary.png","PNG")
-        Original_Image = Image.open("C:\\Users\\mehrdad.almasi\\Desktop\\temporary.png") 
+        Original_Image = Image.open("C:\\Users\\mh\\Desktop\\temporary.png") 
 
 #     # Rotate Image By 90 Degree  (if needed)
 #         rotated_image1 = Original_Image.rotate(-90) 
